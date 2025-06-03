@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hubli Local Train - Dijkstra Path Finder</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container" role="main">
+    <h1>Hubli Local Train - Dijkstra Path Finder</h1>
+    <label for="start">Start Station</label>
+    <select id="start" aria-label="Select start station"></select>
+
+    <label for="end">Destination Station</label>
+    <select id="end" aria-label="Select destination station"></select>
+
+    <button id="findBtn" disabled>Find Shortest Path</button>
+
+    <div class="spinner" id="spinner" aria-live="polite" aria-label="Loading"></div>
+    <div class="results" id="results" role="region" aria-live="polite"></div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
